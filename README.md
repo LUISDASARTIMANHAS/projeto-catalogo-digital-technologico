@@ -23,12 +23,14 @@ O projeto oferece:
 | `index.html` | Página principal da loja, busca, filtros e catálogo. |
 | `produto.html` | Estrutura da página de detalhes de um produto. |
 | `cad-prod.html` | Formulário auxiliar de cadastro de produtos. |
-| `loja-data.js` | Categorias, marcas e produtos mockados. |
-| `loja.js` | Busca, filtros, ordenação, paginação e renderização do catálogo. |
-| `produto.js` | Leitura do ID na URL e renderização dos detalhes do produto. |
-| `cad-prod.js` | Conversão do formulário de cadastro em JSON compatível com `loja-data.js`. |
-| `loja.css` | Estilos específicos da loja e dos cartões de produto. |
-| `cookie-consent.js` | Consentimento de cookies e persistência da escolha do visitante. |
+| `src/js/loja-data.js` | Categorias, marcas e produtos mockados. |
+| `src/js/loja.js` | Busca, filtros, ordenação, paginação e renderização do catálogo. |
+| `src/js/produto.js` | Leitura do ID na URL e renderização dos detalhes do produto. |
+| `src/js/cad-prod.js` | Conversão do formulário de cadastro em JSON compatível com `loja-data.js`. |
+| `src/css/loja.css` | Estilos específicos da loja e dos cartões de produto. |
+| `src/js/cookie-consent.js` | Consentimento de cookies e persistência da escolha do visitante. |
+| `src/css/template.css` | Estilos compartilhados da identidade visual. |
+| `src/assets/` | Imagens de produtos e imagem de fallback. |
 | `LICENSE` | Licença GNU GPL v3. |
 
 ## Requisitos
@@ -36,7 +38,7 @@ O projeto oferece:
 - navegador moderno com suporte a JavaScript ES6+;
 - um servidor HTTP local ou hospedagem de arquivos estáticos;
 - conexão com a internet para carregar Bootstrap, Bootstrap Icons e Animate.css via CDN;
-- os arquivos compartilhados referenciados por `../src/` quando o projeto estiver integrado ao site principal.
+- os recursos compartilhados organizados em `src/css`, `src/js` e `src/assets`.
 
 Não existe processo de build ou gerenciador de dependências neste diretório.
 
@@ -131,7 +133,7 @@ Ao adicionar produtos, informe os nomes dos arquivos sem a extensão quando segu
 
 ## Personalização
 
-Para alterar o catálogo, edite `loja-data.js`. Para alterar o comportamento de busca, filtros ou ordenação, edite `loja.js`. A identidade visual da loja está concentrada em `loja.css`, enquanto estilos compartilhados podem vir de `../src/css/template.css`.
+Para alterar o catálogo, edite `src/js/loja-data.js`. Para alterar o comportamento de busca, filtros ou ordenação, edite `src/js/loja.js`. A identidade visual da loja está concentrada em `src/css/loja.css`, enquanto estilos compartilhados ficam em `src/css/template.css`.
 
 ## Licença
 
