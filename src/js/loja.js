@@ -29,8 +29,8 @@ const state = {
   sort: "relevancia",
   page: 1,
 };
-const PRODUCT_IMAGE_PATH = "../src/assets/products/";
-const PRODUCT_FALLBACK_IMAGE = "../src/assets/no-image.png";
+const PRODUCT_IMAGE_PATH = "src/assets/products/";
+const PRODUCT_FALLBACK_IMAGE = "src/assets/no-image.png";
 
 /**
  * Retorna a URL da imagem do produto.
